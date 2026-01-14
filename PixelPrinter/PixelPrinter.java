@@ -8,7 +8,7 @@ public class PixelPrinter {
         stream=  new FileOutputStream(file);
      }
 
-    public void print(Shader shader,Vec2 resolution) throws IOException{
+    public void print(Shader shader,Vec2 resolution,double time) throws IOException{
          byte buffer[]= new byte[(int)(resolution.x*resolution.y*3f)];
          int rx= (int)resolution.x;
          int ry= (int)resolution.y;
@@ -17,7 +17,7 @@ public class PixelPrinter {
          stream.write(header.getBytes()); 
         for(float y=0;y<resolution.y;y++){
             for(float x=0;x<resolution.x;x++){
-               Vec3 color= runShader(shader,new Vec2( x, y),resolution);
+               Vec3 color= runShader(shader,new Vec2( x, y),resolution,time);
                int pos = (int)(y*resolution.x+x);
                pos*=3; 
                putColor(buffer,color, pos);
@@ -28,8 +28,8 @@ public class PixelPrinter {
         stream.close();
     }
 
-    Vec3 runShader(Shader shader,Vec2 p,Vec2 r){
-       return shader.shade(p,r);
+    Vec3 runShader(Shader shader,Vec2 p,Vec2 r,double time){
+       return shader.shade(p,r,time);
     }
 
     void putColor(byte[] buffer,Vec3 color, int pos){
@@ -39,9 +39,6 @@ public class PixelPrinter {
         buffer[pos]=(byte)(color.x*254f);
         buffer[pos+1]=(byte)(color.y*254f);
         buffer[pos+2]=(byte)(color.z*254f);
-    }
-    void printVideo(Shader shader,Vec2 r, float  seconds){
-        
     }
 
 }

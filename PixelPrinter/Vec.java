@@ -24,8 +24,12 @@ public class Vec {
     public static double lerp(double a, double b, double t){
         return (a+b-a)*t;
     }
+    public  static Vec2 mix(Vec2 a, Vec2 b,float t){
+        return new Vec2(lerp(a.x,b.x,t),lerp(a.y,b.y,t));
+    }
     
-    
-
+    public  static Vec3 mix(Vec3 a, Vec3 b,float t){
+        return new Vec3(lerp(a.x,b.x,t),lerp(a.y,b.y,t),lerp(a.z,b.z,t));
+    }
     
 }
