@@ -15,5 +15,17 @@ public class Vec {
     public static Vec3 scale(Vec3 a,double s){
         return new Vec3(a.x*s,a.y*s,a.z*s);
     }
+    public static Vec2 fract(Vec2 v){
+        return new Vec2(v.x-Math.floor(v.x),v.x-Math.floor(v.x));
+    }
+    public Vec3  fract(Vec3 v){
+        return new Vec3(v.x-Math.floor(v.x),v.x-Math.floor(v.x),v.z-Math.floor(v.z));
+    }
+    public static double lerp(double a, double b, double t){
+        return (a+b-a)*t;
+    }
+    
+    
+
     
 }
