@@ -1,4 +1,4 @@
-package PixelPrinter;
+package JLSL;
 public class Vec2 
 {
     public double x,y;
@@ -6,7 +6,7 @@ public class Vec2
         this.x=x;
         this.y=y;
     }
-    public  double length(){return Math.sqrt(x*x+y*y);}
+    
 
     
     

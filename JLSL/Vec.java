@@ -1,4 +1,4 @@
-package PixelPrinter;
+package JLSL;
 public class Vec {
     public static Vec2 add (Vec2 a,  Vec2 b){
         return new Vec2(a.x+b.x, a.y+b.y);
@@ -30,6 +30,12 @@ public class Vec {
     
     public  static Vec3 mix(Vec3 a, Vec3 b,float t){
         return new Vec3(lerp(a.x,b.x,t),lerp(a.y,b.y,t),lerp(a.z,b.z,t));
+
     }
-    
+    public static double length(Vec2 v){
+        return Math.sqrt(v.x*v.x+v.y*v.y);
+    }
+    public static double length(Vec3 v){    
+        return Math.sqrt(v.x*v.x+v.y*v.y+v.z*v.z);
+    }
 }

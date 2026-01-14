@@ -1,4 +1,4 @@
-package PixelPrinter;
+package JLSL;
 
 import java.io.File;
 import java.io.IOException;
