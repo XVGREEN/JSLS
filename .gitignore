@@ -1,3 +1,7 @@
 foto.ppm
 output.png
-/output/        
+/output/       
+/vscode/
+*.class 
+*.jar
+launch.json
