@@ -3,7 +3,7 @@
 JLSL is a lightweight library that brings **GLSL‑style programming** into pure Java. It gives you vector types, shader‑style math functions, and a functional rendering model — all without requiring OpenGL, Vulkan, or GPU shaders. If you’ve ever wanted to write shader code but stay entirely inside Java, JLSL is designed for you.
 
 
-## 🌟 Why JLSL?
+## Why JLSL?
 
 Traditional shader development requires:
 
@@ -26,7 +26,7 @@ It’s a tiny, expressive environment for shader‑style thinking.
 
 ---
 
-## 🧩 Core Concepts
+##  Core Concepts
 
 ### **GLSL‑Inspired Types**
 JLSL includes familiar types:
@@ -99,7 +99,7 @@ This is pure Java, but it reads like a fragment shader.
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 | Component | Purpose |
 |----------|---------|
@@ -111,7 +111,7 @@ This is pure Java, but it reads like a fragment shader.
 
 ---
 
-## ▶️ Running JLSL Projects
+## Running JLSL Projects
 
 1. Add JLSL to your classpath.
 2. Write a shader function.
@@ -128,7 +128,7 @@ This produces a 3‑second video at 60 FPS.
 
 ---
 
-## 🌱 What You Can Build With JLSL
+## What You Can Build With JLSL
 
 - Procedural animations  
 - Generative art  
