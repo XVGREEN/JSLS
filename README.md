@@ -141,3 +141,5 @@ This produces a 3‑second video at 60 FPS.
 If you know GLSL, you’ll feel at home.  
 If you don’t, JLSL is a great way to learn.
 
+# warning
+must  have  ffmpeg installed to generate video

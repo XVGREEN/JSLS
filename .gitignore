@@ -5,3 +5,4 @@ output.png
 *.class 
 *.jar
 launch.json
+settings.json
