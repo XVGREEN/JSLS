@@ -33,9 +33,9 @@ public class PixelPrinter {
     }
 
     void putColor(byte[] buffer,Vec3 color, int pos){
-        color.x= Jlsl.clamp(color.x, -1., 1.);
-        color.y= Jlsl.clamp(color.y, -1., 1.);
-        color.z= Jlsl.clamp(color.x, -1., 1.);
+        color.x= Vec.clamp(color.x, 0., 1.);
+        color.y= Vec.clamp(color.y, 0, 1.);
+        color.z= Vec.clamp(color.z, 0, 1.);
         buffer[pos]=(byte)(color.x*254f);
         buffer[pos+1]=(byte)(color.y*254f);
         buffer[pos+2]=(byte)(color.z*254f);

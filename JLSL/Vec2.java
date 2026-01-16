@@ -6,6 +6,10 @@ public class Vec2
         this.x=x;
         this.y=y;
     }
+    public Vec2(double d) {
+        this.x=d;
+        this.y=d;
+    }
     
 
     
